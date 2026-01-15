@@ -7,7 +7,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: import.meta.env.VITE_BACKENDURL,
+    origin: process.env.FRONTENDURL,
   },
 });
 
