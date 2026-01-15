@@ -5,12 +5,14 @@ import express from "express";
 const app = express();
 const server = http.createServer(app);
 
+console.log("CORS Origin being used:", process.env.FRONTENDURL);
+
 const io = new Server(server, {
   cors: {
     origin: process.env.FRONTENDURL,
+    methods: ["GET", "POST"]
   },
 });
-
 export function getReceiverSocketId(userId) {
   return userSocketMap[userId];
 }
