@@ -5,7 +5,6 @@ import express from "express";
 const app = express();
 const server = http.createServer(app);
 
-console.log("CORS Origin being used:", process.env.FRONTENDURL);
 
 const io = new Server(server, {
   cors: {
