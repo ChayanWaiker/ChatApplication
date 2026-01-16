@@ -1,6 +1,6 @@
 [[redirects]]
   from = "/api/*"
-  to = "https://chat-application-nodejs.netlify.app/api/:splat"
+  to = "https://chatapplication-1q4p.onrender.com/api/:splat"
   status = 200
   force = true
 
